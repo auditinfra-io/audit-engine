@@ -221,7 +221,7 @@ Exact flags, defaults, exit codes, and optional dependencies belong to the user-
 
 ## 11. What this document deliberately does not disclose
 
-This document does not publish proprietary detector heuristics, private benchmark targets, customer material, internal rule-tuning history, model prompts, unpublished invariant packs, or operational secrets. It describes interfaces and guarantees at the level needed to evaluate suitability and integration. Public behavior can be validated through the repository’s documented fixtures, tests, schemas, and reproducible benchmark commands.
+This document does not publish proprietary detector heuristics, private benchmark targets, customer material, internal rule-tuning history, model prompts, unpublished invariant packs, or operational secrets. It describes interfaces and guarantees at the level needed to evaluate suitability and integration. The engine’s repository is not public, so the fixtures, tests, schemas, and benchmark commands behind the behavior described here cannot be independently inspected or run. The same methodology is demonstrated in public in [gnark-safety](https://github.com/auditinfra-io/gnark-safety), whose canary record, executable witness tests, and generated rule documentation are open.
 
 ## 12. Limitations and responsible use
 
