@@ -3,7 +3,7 @@
 Status: Public technical overview  
 Audience: Security engineers, protocol teams, auditors, and platform integrators  
 Implementation language: Python 3.10+ (with a small amount of Rust/toolchain integration)  
-Product class: Local-first static analysis and formal-verification tooling for smart contracts and zero-knowledge circuits
+Product class: Local-first static analysis and bounded model checking tooling for smart contracts and zero-knowledge circuits
 
 This document describes the externally observable architecture and engineering principles of Audit Engine CLI. It is intentionally implementation-neutral where disclosure would expose proprietary detection heuristics, corpus composition, or operational procedures. The goal is to make the system’s contracts, assumptions, and evidence model reviewable without publishing intellectual property.
 
@@ -229,4 +229,4 @@ No static analyzer can establish the absence of every exploit. In particular, re
 
 ## 13. Summary
 
-Audit Engine CLI is a Python-based, local-first analyzer that layers lexical detection, structural and data-flow analysis, bounded symbolic reasoning, and optional formal verification. Its architecture is designed to preserve useful findings under degraded conditions, make uncertainty visible, maintain source traceability, and scale expensive reasoning through explicit resource budgets. The public contract is therefore not “a clean scan means secure”; it is “the engine reports what it established, what it could not establish, and the evidence supporting each conclusion.”
+Audit Engine CLI is a Python-based, local-first analyzer that layers lexical detection, structural and data-flow analysis, bounded symbolic reasoning, and optional bounded model checking. Its architecture is designed to preserve useful findings under degraded conditions, make uncertainty visible, maintain source traceability, and scale expensive reasoning through explicit resource budgets. The public contract is therefore not “a clean scan means secure”; it is “the engine reports what it established, what it could not establish, and the evidence supporting each conclusion.”
